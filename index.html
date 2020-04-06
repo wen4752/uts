@@ -8,6 +8,40 @@
     <script type="text/javascript">
 
   
+        function hitungtotal() {
+            var jumlah_pinjaman = document.getElementById("jumlahpinjaman").value;
+            var waktu_pinjaman = document.getElementById("waktupinjaman").value;
+            var tot = document.getElementById("totalpengembalian");
+
+            if (jumlah_pinjaman != "" && waktu_pinjaman != "") {
+
+
+                jumlah_pinjaman = parseInt(jumlah_pinjaman);
+                waktu_pinjaman = parseInt(waktu_pinjaman);
+
+                var hasil;
+                var bunga=0;
+                if (waktu_pinjaman >= 1 && waktupinjaman <= 6) {
+                    bunga=0.02;                    
+                }
+                else if (waktu_pinjaman <= 12) {
+                    bunga=0.015;
+                }
+                else {
+                   bunga=0.01;
+                }
+                hasil = parseInt(jumlah_pinjaman) + parseInt((parseInt(jumlah_pinjaman)*bunga*parseInt(waktu_pinjaman)));
+                alert(hasil);
+                var strhasil = String(hasil);  
+                tot.innerHTML=strhasil;
+                addDatatoTable(jumlah_pinjaman,waktu_pinjaman,hasil);
+            }
+            else {
+                alert("data belum terisi");
+            }
+
+
+        }
 
     </script>
 </header>
