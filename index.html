@@ -1,0 +1,60 @@
+<html>
+<header>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script type="text/javascript">
+
+  
+
+    </script>
+</header>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h1>Halaman Input Pinjaman</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#page1">Halman Input Pinjaman</a></li>
+                    <li><a href="#page2"  >Halaman Informasi Cicilan</a></li>
+                </ul>
+            </div>
+        </div>
+        <div data-role="main" class="ui-content">
+            <div class="ui-grid-a">
+                <div class="ui-block-b">
+                    <label>Jumlah Pinjaman</label>
+                    <input type="number" name="number" pattern="[0-9]*" id="jumlahpinjaman" value="" >
+                </div>
+                <div class="ui-block-b">
+                    <label>Waktu Pinjaman</label>
+                    <input type="number" name="number" pattern="[0-9]*" id="waktupinjaman" value="">
+                    
+                    
+                </div>
+                <div class="ui-block-b">                    
+                    <input type="button" value="Add" onclick="hitungtotal()">
+                </div>
+            </div>
+
+            <div class="ui-grid-c">
+                <div class="ui-block-b">
+                    <label value="">Total Pengembalian: </label>        
+                    <label type="textarea" id="totalpengembalian" >0</label>
+                </div>
+            </div>
+            
+        </div>
+        <div data-role="footer" class="ui-content">
+            Halaman Input Pinjaman
+        </div>
+
+    
+    </div>
+
+</body>
+
+</html>
