@@ -43,6 +43,12 @@
 
         }
 
+        function addDatatoTable(jumlah_pinjaman,waktu_pinjaman,hasil){
+            alert("masuk");
+            var tableBody =$("table tbody")
+            var tab="<tr><td>"+jumlah_pinjaman+"</td><td>"+waktu_pinjaman+"</td><td>"+hasil+"</td></tr>"
+            tableBody.append(tab)
+        }
     </script>
 </header>
 
@@ -82,7 +88,7 @@
             </div>
             
         </div>
-        <div data-role="footer" class="ui-content">
+        <div data-role="footer" >
             Halaman Input Pinjaman
         </div>
 
